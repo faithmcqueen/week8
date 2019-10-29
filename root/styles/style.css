@@ -1,0 +1,151 @@
+﻿/* default */
+html{
+  color: black;
+  font-family: 'Oswald|Roboto', sans-serif;
+  font-size: 20px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+
+/* header */
+header{
+  background-color: #708090;
+  color: white;
+}
+
+.logo-title{
+  width:80%;
+  margin: 0 auto;
+  padding:0.5em;
+}
+
+.main-nav {
+  position:absolute;
+  right:80px;
+  top:90px;
+}
+
+.main-nav li{
+  display: inline-block;
+}
+
+.main-nav a{
+  text-decoration: none;
+  padding:0.5em;
+  color:white;
+}
+
+.logo {
+  width: 100px;
+}
+
+/* body */
+main {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+}
+
+.t-shirt {
+  width: 50%;
+  text-align: center;
+  color: #d3d3d3;
+}
+
+.t-shirt img {
+  width: 50%;
+}
+
+.form {
+  margin: 10px;
+}
+
+.form-item {
+  clear: both;
+}
+
+label {
+  float: left;
+}
+
+select, input {
+  float: right;
+  margin-right: 0;
+}
+
+#bloc1, #bloc2, #bloc3, #bloc4, #bloc5
+{
+    display:inline;
+}
+
+.color {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  display: inline-block;
+}
+
+#white {
+  background-color: white;
+  border: solid 1px black;
+}
+
+#black {
+  background-color: #434343;
+}
+
+#red {
+  background-color: #af3b54;
+}
+
+#blue {
+  background-color: #3960ad;
+}
+
+#green {
+  background-color: #36ab6b;
+}
+
+#purple {
+  background-color: #7738ac;
+}
+
+.radio-option {
+  display: inline-block;
+}
+
+.shirtbtn {
+  display: none;
+}
+
+.deliveryselect label {
+  font-size: 1em;
+  float: right;
+}
+
+/* alert */
+#alertbox {
+  display: none;
+  background: red;
+  color: white;
+  width: 300px;
+}
+
+/* footer */
+footer {
+  height: 100px;
+  background: #1e1e1e;
+  color: white;
+}
+

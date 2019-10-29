@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head runat="server">
+    <title>Merchandise</title>
+    <!--link href="styles/bittsreset.css" rel="stylesheet" type="text/css" /-->
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap" rel="stylesheet">
+    <script src="scripts/validate.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo-title">
+        <img class="logo" src="images/codejamlogo.jpg">
+        <h2 id="Title"> HTTP Week 8</h2>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Merchandise</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Merchandise</h1>
+      <div class="container">
+        <div class="t-shirt">
+          <p>Small Purple Crew Cut T-Shirt</p>
+          <img id="image" src="images/tshirt-black.png">
+        </div>
+        <div class="order">
+          <p><b>Your Order:</b><br></p>   
+          <form name="order-form" onsubmit="return check()"  method="post">
+           <div class="form-item">
+            <div>Select Colour:</div>
+            <div class="form-item">
+              <div class="color white" id="white">
+                <input type="radio" id="white-shirt" name="shirt-color" class="shirtbtn" checked>
+                <label for="white-shirt" class="shirtbtn">White Shirt</label>
+              </div>
+              <div class="color black" id="black">
+                <input type="radio" id="black-shirt" name="shirt-color" class="shirtbtn">
+                <label for="black-shirt" class="shirtbtn">Black Shirt</label>
+              </div>
+              <div class="color red" id="red">
+                <input type="radio" id="red-shirt" name="shirt-color" class="shirtbtn">
+                <label for="red-shirt" class="shirtbtn">Red Shirt</label>
+              </div>
+              <div class="color blue" id="blue">
+               <input type="radio" id="blue-shirt" name="shirt-color" class="shirtbtn">
+               <label for="blue-shirt" class="shirtbtn">Blue Shirt</label>
+              </div>
+              <div class="color green" id="green">
+                <input type="radio" id="green-shirt" name="shirt-color" class="shirtbtn">
+                <label for="green-shirt" class="shirtbtn">Green Shirt</label>
+              </div>
+              <div class="color purple" id="purple">
+                <input type="radio" id="purple-shirt" name="shirt-color" class="shirtbtn">
+                <label for="purple-shirt" class="shirtbtn">Purple Shirt</label>
+              </div>
+            </div>
+          </div>
+            <div class="form-item">
+              <label for="tshirt_size">Choose Size:</label>
+              <select class="form" name="shirt_size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="xlarge">X-Large</option>
+              </select>
+            </div>
+            <br>
+            <div class="form-item">
+              <label for="tshirt_style">Style:</label>
+              <select class="form" name="tshirt_style">
+                <option value="plain">Plain</option>
+                <option value="crewcut">Crew Cut (+$2.00)</option>
+                <option value="vneck">V-Neck (+$5.00)</option>
+                <option value="baseball">Baseball (+$1.00)</option>
+            </select>
+            </div>
+            <div class="form-item">
+              <label for="name">Name:</label>
+              <input class="form" type="text" id="name" name="name" placeholder="Please enter your name." align="right">
+            </div>
+            <div class="form-item">
+              <label for="address">Address:</label>
+              <textarea name="address" placeholder="Enter your mailing address." align="right"></textarea>
+            </div>
+            <div class="form-item">
+              <div>Delivery Type:</div>
+            <div class="deliveryselect">
+                <label for="express-delivery">Express</label>
+                <input type="radio" id="express-delivery" name="delivery-type">
+            </div>
+            <div class="deliveryselect">
+                <label for="normal-delivery">Normal</label>
+                <input type="radio" id="normal-delivery" name="delivery-type" checked>
+            </div>
+            <div>
+              <input type="submit" value="Submit">
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>This website is for educational purposes only.</p>
+    </footer>
+  </body>
+</html>
