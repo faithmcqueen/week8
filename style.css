@@ -1,0 +1,426 @@
+﻿/* default */
+html{
+  color: black;
+  font-family: 'Oswald|Roboto', sans-serif;
+  font-size: 20px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+p {
+  margin: 0;
+}
+
+@media screen and (max-width: 640px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+/* header */
+header{
+  background-color: #708090;
+  color: white;
+}
+
+.header-content {
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+}
+
+.logo-title{
+  width: 50%;
+}
+
+.logo-title h2 {
+  margin: 0;
+  font-weight: 100;
+}
+
+.logo-title-content {
+  width: 200px;
+  text-align: center;
+}
+
+.main-nav {
+  width: 50%;
+  text-align: right;
+  margin-top: 100px;
+}
+
+.main-nav ul {
+  padding: 0;
+}
+
+.main-nav li{
+  display: inline-block;
+  list-style: none;
+  position: relative;
+}
+
+.main-nav a{
+  text-decoration: none;
+  padding:0.5em;
+  color:white;
+}
+
+.main-nav a:hover{
+  color: #f187b7;
+}
+
+/* DROP DOWN MENU */
+
+.main-nav li ul {
+  padding:0;
+  background-color: #708090;
+  position: absolute;
+  width:150px;
+  text-align: left;
+}
+
+.main-nav li li {
+  display: block;
+  padding:0.2em 0.5em;
+}
+
+.main-nav li:hover ul {
+  left:0;
+}
+
+.submenu {
+  display: none;
+}
+
+.dropdown-item:hover  .submenu{
+  display: block;
+  position: absolute;
+}
+
+
+.logo {
+  width: 100px;
+}
+
+@media screen and (max-width: 640px) {
+  .header-content {
+    display: block;
+  }
+
+  .logo-title, .main-nav {
+    width: 100%;
+  }
+
+  .logo-title {
+    text-align: center;
+  }
+
+  .logo-title-content {
+    width: 100%;
+  }
+
+  .main-nav {
+    margin-top: 20px;
+  }
+
+  .main-nav li {
+    width: 100%;
+    text-align: center;
+  }
+
+}
+
+/* body */
+main {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.t-shirt {
+  width: 50%;
+  text-align: center;
+  color: #708090;
+}
+
+.t-shirt p {
+    padding:0.5em;
+    color:#5b575e;
+}
+
+.t-shirt img {
+  width: 50%;
+}
+
+.order {
+  width: 40%;
+}
+
+.form {
+  margin: 10px;
+}
+
+.form-item {
+  clear: both;
+  padding: 20px 0;
+}
+
+label {
+  float: left;
+}
+
+.form-item select, .form-item input {
+  float: right;
+  margin-right: 0;
+  box-sizing: border;
+  border: 1px solid gray;
+}
+
+.form-item textarea {
+  border: 1px solid gray;
+}
+
+select {
+  width: 150px;
+}
+
+input[name=name]{
+  width: 200px;
+}
+
+input[type=radio]{
+  margin-right: 5px;
+}
+
+textarea {
+  width: 100%;
+  height: 65px;
+}
+
+.color {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  display: inline-block;
+}
+
+.shirtbtn {
+  margin-right: 0;
+  box-sizing: border-box;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  transform: scale(1.5); 
+  opacity: 0;
+}
+
+
+#white {
+  background-color: white;
+  border: solid 1px black;
+}
+
+#black {
+  background-color: #434343;
+}
+
+#red {
+  background-color: #af3b54;
+}
+
+#blue {
+  background-color: #3960ad;
+}
+
+#green {
+  background-color: #36ab6b;
+}
+
+#purple {
+  background-color: #7738ac;
+}
+
+.radio-option {
+  display: inline-block;
+}
+
+.shirtlabel {
+  display: none;
+}
+
+.deliveryselect label {
+  font-size: 1em;
+  float: right;
+}
+
+.orderbutton {
+  margin: 70px 0;
+  text-align: center;
+}
+
+input[type=submit] {
+  border: none;
+  background: #d3d3d3;
+  width: 200px;
+  height: 30px;
+}
+
+input[type=submit]:hover {
+  background-color: #f187b7;
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    display: block;
+  }
+
+  .t-shirt {
+    width: 100%;
+  }
+
+  .order {
+    width: 100%;
+  }
+
+}
+
+/* alert */
+#alertbox {
+  display: none;
+  background: #ca3e47;
+  color: white;
+  width: 350px;
+  padding: 10px;
+  margin-top: 30px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+/* footer */
+footer {
+  height: 150px;
+  background: #1e1e1e;
+  color: white;
+}
+
+footer p {
+  width: 80vw;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+/* order confirm page */
+.ordered-container {
+  border: solid 1px gray;
+  padding: 10px;
+}
+
+.ordered-t-shirt {
+  width: 40%;
+}
+
+.ordered-t-shirt h4 {
+  color: black;
+  text-align: left;
+  margin: 10px;
+}
+
+.ordered-t-shirt img {
+  width: 20%;
+}
+
+#ordered-color, #ordered-size, #ordered-style {
+  margin: 15px 0;
+}
+
+#ordered-color {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 640px) {
+  .ordered-t-shirt {
+    width: 100%;
+  }
+
+}
+
+/* confirm form */
+form[name=confirm-form] input[name=name], form[name=confirm-form] input[name=telephone], form[name=confirm-form] select, form[name=confirm-form] textarea {
+  width: 75%;
+}
+
+form[name=confirm-form] textarea {
+  float: right;
+}
+
+#cancel {
+  border: solid 1px #d3d3d3;
+  width: 200px;
+  height: 30px;
+  margin: 20px;
+}
+
+#cancel a {
+  text-decoration: none;
+  color: black;
+}
+
+#cancel:hover {
+  background-color: #f187b7;
+}
+
+
+@media screen and (max-width: 640px) {
+  form[name=confirm-form] input[name=name], form[name=confirm-form] input[name=telephone], form[name=confirm-form] select, form[name=confirm-form] textarea {
+    width: 100%;
+  }
+
+  #alertbox {
+    width: 90%;
+  }
+}
+
+
+/* Overview Page */
+
+ .merch-wrapper img {
+  max-width: 40%;
+} 
+.col-33 {
+  max-width: 30%;
+  display: inline-block;
+  text-align: center;
+}
+
+.smimg {
+  padding-bottom: 15em;
+}
+
+.container a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.9em;
+}
+
+.shopbtn {
+  background-color: #9b5481;
+  border-style: 1px black solid;
+  padding: 5px 15px;
+}
+
+a.shopbtn:hover {
+  background-color: #f187b7;
+}

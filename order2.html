@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head runat="server">
+    <title>Merchandise</title>
+    <!--link href="styles/bittsreset.css" rel="stylesheet" type="text/css" /-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap" rel="stylesheet">
+    <script src="scripts/validate-hoodie.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <div class="logo-title">
+          <div class="logo-title-content">
+            <a href="index.html"><img class="logo" src="images/codejamlogo.jpg"></a>
+            <h2 id="Title">HTTP Week 8</h2>
+          </div>
+        </div>
+        <div class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+              <li class="dropdown-item"><a href="#">Merchandise</a>
+              <div class="submenu">
+                  <ul>
+                    <li><a href="index.html">T-Shirts</a></li>
+                    <li><a href="hoodies.html">Hoodies</a></li>
+                    <li><a href="#">Pants</a></li>
+                    <li><a href="#">Hats</a></li>
+                  </ul>
+                  </div>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h1>Order Confirm</h1>
+      <div class="ordered-container container">
+        <div class="t-shirt ordered-t-shirt">
+          <h4>Your Order</h4>
+          <p id="ordered-description">Small White Hoodie</p>
+          <img id="ordered-image" src="images/Hoodie-White.png">
+        </div>
+        <div class="order">
+          <div id="ordered-color"></div>
+          <div id="ordered-size"></div>
+          <div id="ordered-amt"></div>
+        </div>
+      </div>
+
+      <div class="profile">
+        <h4>Please fill in these information</h4>
+        <form name="confirm-form" action="thankyou.html" onsubmit="return check()" method="post">
+          <div class="form-item">
+            <label for="name">Name:</label>
+            <input class="form" type="text" id="name" name="name" placeholder="Please enter your name.">
+          </div>
+          <div class="form-item">
+            <label for="telephone">Telephone(ex 0123456789):</label>
+            <input class="form" type="tel" id="telephone" name="telephone" placeholder="Please enter your telephone number.">
+          </div>
+          <div class="form-item">
+            <label for="province">Province:</label>
+            <select>
+              <option value="on">Ontario</option>
+              <option value="qc">Quebec</option>
+              <option value="ns">Nova Scotia</option>
+              <option value="nb">New Brunswick</option>
+              <option value="mb">Manitoba</option>
+              <option value="bc">British Columbia</option>
+              <option value="pe">Prince Edward Island</option>
+              <option value="sk">Saskatchewan</option>
+              <option value="ab">Alberta</option>
+              <option value="nl">Newfoundland and Labrador</option>
+            </select>
+          </div>
+          <div class="form-item">
+            <label for="address">Address:</label>
+            <textarea name="address" placeholder="Enter your mailing address."></textarea>
+          </div>
+          <div class="form-item">
+            <label>Delivery Type:</label>
+            <div class="deliveryselect">
+              <label for="express-delivery">Express</label>
+              <input type="radio" id="express-delivery" name="delivery-type">
+            </div>
+            <div class="deliveryselect">
+              <label for="normal-delivery">Normal</label>
+              <input type="radio" id="normal-delivery" name="delivery-type" checked>
+            </div>
+          </div>
+          <div id="alertbox">
+          </div>
+          <div class="orderbutton">
+            <button id="cancel"><a href="index.html">Cancel</a></button>
+            <input type="submit" value="Confirm">
+          </div>
+        </form>
+      </div>
+
+    </main>
+
+    <footer>
+      <p>This website is for educational purposes only.</p>
+    </footer>
+    <script src="scripts/validate.js"></script>
+  </body>
+</html>

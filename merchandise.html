@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head runat="server">
+    <title>Merchandise</title>
+    <!--link href="styles/bittsreset.css" rel="stylesheet" type="text/css" /-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap" rel="stylesheet">
+    <script src="scripts/validate.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <div class="logo-title">
+          <div class="logo-title-content">
+            <a href="index.html"><img class="logo" src="images/codejamlogo.jpg"></a>
+            <h2 id="Title"> HTTP Week 8</h2>
+          </div>
+        </div>
+        <div class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+              <li class="dropdown-item"><a href="merchandise.html">Merchandise</a>
+              <div class="submenu">
+                  <ul>
+                    <li><a href="index.html">T-Shirts</a></li>
+                    <li><a href="hoodies.html">Hoodies</a></li>
+                    <li><a href="#">Pants</a></li>
+                    <li><a href="#">Hats</a></li>
+                  </ul>
+                  </div>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+    <div class="merch-wrapper">
+      <h1>Shop Our Merchandise</h1>
+        <div class="container">
+          <div class="col-33">
+              <img id="image" src="images/Crewcut-blue.png" alt="Blue Crew Neck T-Shirt">
+              <h3>T-Shirts</h3>
+              <a href="index.html" class="shopbtn">Shop Now</a>
+          </div>
+          <div class="col-33">
+              <img id="image" src="images/Hoodie-White.png" alt="White Hoodie">
+              <h3>Hoodies/Sweatshirts</h3>
+              <a class="shopbtn" href="hoodies.html">Shop Now</a>
+          </div>
+          <div class="col-33">
+             <img id="image" src="images/CrewSweater-Yellow.png" alt="Yellow Crew Cut Sweater">
+              <h3>Sweaters</h3>
+              <a href="#" class="shopbtn">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+        <p>This website is for educational purposes only.</p>
+    </footer>
+</html>

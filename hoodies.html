@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head runat="server">
+    <title>Merchandise/Hoodie</title>
+    <!--link href="styles/bittsreset.css" rel="stylesheet" type="text/css" /-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap" rel="stylesheet">
+    <script src="scripts/validate-hoodie.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <div class="logo-title">
+          <div class="logo-title-content">
+            <a href="index.html"><img class="logo" src="images/codejamlogo.jpg"></a>
+            <h2 id="Title"> HTTP Week 8</h2>
+          </div>
+        </div>
+        <div class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+              <li class="dropdown-item"><a href="#">Merchandise</a>
+              <div class="submenu">
+                  <ul>
+                    <li><a href="index.html">T-Shirts</a></li>
+                    <li><a href="hoodies.html">Hoodies</a></li>
+                    <li><a href="#">Pants</a></li>
+                    <li><a href="#">Hats</a></li>
+                  </ul>
+                  </div>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h1>Merchandise</h1>
+      <form name="order-form" action="order2.html">
+        <div class="container">
+          <div class="t-shirt">
+            <p id="description">Small White Hoodie</p>
+            <img id="image" src="images/Hoodie-White.png">
+          </div>
+          <div class="order">
+            <p>Your Order:</p>   
+            <div class="form-item">
+              <div>Select Colour:</div>
+              <div class="form-item">
+                <div class="color white" id="white">
+                  <input value="White" type="radio" id="white-hoodie" name="hoodie-color" class="shirtbtn" checked>
+                  <label for="white-hoodie" class="shirtlabel">White Shirt</label>
+                </div>
+                <div class="color black" id="black">
+                  <input type="radio" value="Black" id="black-hoodie" name="hoodie-color" class="shirtbtn">
+                  <label for="black-hoodie" class="shirtlabel">Black Shirt</label>
+                </div>
+                <div class="color red" id="red">
+                  <input type="radio" value="Red" id="red-hoodie" name="hoodie-color" class="shirtbtn">
+                  <label for="red-hoodie" class="shirtlabel">Red Shirt</label>
+                </div>
+                <div class="color blue" id="blue">
+                  <input type="radio" value="Blue" id="blue-hoodie" name="hoodie-color" class="shirtbtn">
+                  <label for="blue-hoodie" class="shirtlabel">Blue Shirt</label>
+                </div>
+                <div class="color green" id="green">
+                  <input type="radio" value="Green" id="green-hoodie" name="hoodie-color" class="shirtbtn">
+                  <label for="green-hoodie" class="shirtlabel">Green Shirt</label>
+                </div>
+                <div class="color purple" id="purple">
+                  <input type="radio" value="Purple" id="purple-hoodie" name="hoodie-color" class="shirtbtn">
+                  <label for="purple-hoodie" class="shirtlabel">Purple Shirt</label>
+                </div>
+              </div>
+            </div>
+           <div id="hidden-input"></div>
+            <div class="form-item">
+              <label for="hoodie_size">Choose Size:</label>
+              <select class="form" name="hoodie-size" id="hoodie-size">
+                <option value="Small">Small</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
+                <option value="X-Large">X-Large</option>
+              </select>
+            </div>
+            <br>
+            <div class="form-item">
+              <label for="hoodie_quantity">Quantity:</label>
+              <select class="form" name="hoodie_quantity" id="hoodie-quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <div class="form-item">
+              <label for="name">Name:</label>
+              <input class="form" type="text" id="name" name="name" placeholder="Please enter your name." align="right">
+            </div>
+            <div class="form-item">
+              <label for="address">Address:</label><br>
+              <textarea name="address" placeholder="Enter your mailing address." align="right"></textarea>
+            </div>
+            <div class="form-item">
+              <label>Delivery Type:</label>
+              <div class="deliveryselect">
+                <label for="express-delivery">Express</label>
+                <input type="radio" id="express-delivery" name="delivery-type">
+              </div>
+              <div class="deliveryselect">
+                <label for="normal-delivery">Normal</label>
+                <input type="radio" id="normal-delivery" name="delivery-type" checked>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="alertbox">
+        </div>
+        <div class="orderbutton">
+          <input type="submit" value="Order">
+        </div>
+      </form>
+    </main>
+    <footer>
+      <p>This website is for educational purposes only.</p>
+    </footer>
+  </body>
+</html>
